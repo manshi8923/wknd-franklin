@@ -1,0 +1,52 @@
+/* Article List Wrapper */
+.article-list-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr)); /* Responsive grid */
+    grid-gap: 24px; /* Gap between items */
+}
+
+/* Article Card */
+.article-card {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Card Link */
+.article-card-link {
+    text-decoration: none; /* No underline */
+    color: inherit;
+}
+
+/* Article Card Image */
+.article-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area without distortion */
+    line-height: 0; /* Prevent line height for images */
+}
+
+/* Article Card Title */
+.article-card-title {
+    font-size: 1em;
+    margin-left: 16px;
+    text-decoration: none; /* No underline for title */
+}
+
+/* Article Card Description */
+.article-card-description {
+    margin-left: 16px;
+    color: gray; /* Style for gray text */
+    font-size: 16px; /* Font size for description */
+    text-decoration: none; /* No underline for description */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .article-list-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
